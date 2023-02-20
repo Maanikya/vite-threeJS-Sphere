@@ -1,5 +1,13 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import * as THREE from 'three';
 
-createApp(App).mount('#app')
+//Scene
+const scene = new THREE.Scene()
+
+//Create our Sphere
+const geometry  = new THREE.SphereGeometry(3, 64, 64)
+const material = new THREE.MeshStandardMaterial({
+    color: "#00ff83",
+})
+const mesh = new THREE.Mesh(geometry, material)
+
+scene.add(mesh);
