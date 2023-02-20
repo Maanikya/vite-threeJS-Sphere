@@ -8,6 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gasp": "^0.0.2",
+    "three": "^0.149.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {

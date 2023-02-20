@@ -17,8 +17,8 @@ light.position.set(0, 10, 10)
 scene.add(light)
 
 //Camera
-const camera = new THREE.PerspectiveCamera(45, 800/600)
-camera.position.z = 20
+const camera = new THREE.PerspectiveCamera(45, 800/600, 0.2, 100)
+camera.position.z = 10
 scene.add(camera)
 
 //Renderer
